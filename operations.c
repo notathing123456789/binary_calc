@@ -57,6 +57,8 @@ void add(NumStack *numstack)
             {
                 
             }
+
+            //add function has been completed 
         }
     }
 }
