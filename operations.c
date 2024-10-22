@@ -61,4 +61,40 @@ void add(NumStack *numstack)
     }
 }
 
+void Subtract(NumStack *numstack)
+{
+    number *num1 = NumStackPop(numstack);
+    number *num2 = NumStackPop(numstack);
+    number *num3 = create_num();
+
+    if ((num1->sign == 1 && num2->sign == -1) || (num1->sign == -1) && num2->sign == 1)
+    {
+    }
+
+    int carry = 0;
+
+    if (num1->len_AD != 0 && num2->BD != 0)
+    {
+        int pos1 = num1->len_AD;
+        int pos2 = num2->len_AD;
+
+        if (pos1 != pos2)
+        {
+            if (pos1 > pos2)
+            {
+                number *temp = num1;
+                num1 = num2;
+                num2 = temp;
+                int temp2 = pos1;
+                pos1 = pos2;
+                pos2 = pos1;
+            }
+
+            while(pos1 > pos2)
+            {
+                
+            }
+        }
+    }
+}
 
